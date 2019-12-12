@@ -41,8 +41,6 @@ public class FabricaBicicletas {
                     
                     // Print dos dados armazenados
                     pedido.toString();
-                    //System.out.println("");  
-                    pedido.getCliente().toString();
                     
                     System.out.println("## PEDIDO REGISTRADO COM SUCESSO ##");
                     
