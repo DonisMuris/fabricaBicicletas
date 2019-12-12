@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Pedido {
     private int idPedido;
-    private Itens listaPedido;
+    private ItensPedido listaPedido;
     private Cliente cliente;
     
     
@@ -40,6 +40,29 @@ public class Pedido {
     }
     
     //gerando dados de item, para inserir no Pedido
+    public ItensPedido inserirItens(){
+        System.out.println(" ");
+        System.out.println("### Insira os itens do Pedido ###");
+        Scanner teclado = new Scanner(System.in);
+        ItensPedido novosItens = new ItensPedido();
+        
+        System.out.println("Digite o modelo das bicicletas que voce deseja que sejam produzidas !");
+        String entradaDado1 = teclado.nextLine();
+        novosItens.setModeloBicicleta(entradaDado1);
+        
+        System.out.println("Digite a cor de todas as bicicleta que voce deseja que sejam produzidas !");
+        String entradaDado2 = teclado.nextLine();
+        novosItens.setCorBicicleta(entradaDado2);
+        
+        System.out.println("Digite quantas bicicletas que vc quer que sejam produzidas !");
+        int entradaDado3 = teclado.nextInt();
+        novosItens.setQntBicicleta(entradaDado3);
+        
+        return novosItens;
+    }
+    
+    
+    //gerando o Pedido
     public Pedido gerarNovoPedido(){
         System.out.println(" ");
         Scanner teclado = new Scanner(System.in);
@@ -53,7 +76,6 @@ public class Pedido {
         return pedido;
     }
 
-        
     public ItensPedido passaItens(){
         ItensPedido itens= new ItensPedido();
         return itens;
@@ -62,7 +84,7 @@ public class Pedido {
     public Pedido(int idPedido, Cliente cliente, ItensPedido listaPedido) {
         this.idPedido = idPedido;
         this.cliente = cliente;
-        this.listaPedido = itenspedido;
+        this.listaPedido = listaPedido;
     }
     
     public int getIdPedido() {
@@ -73,11 +95,11 @@ public class Pedido {
         this.idPedido = idPedido;
     }
 
-    public Itens getListaPedido() {
+    public ItensPedido getListaPedido() {
         return listaPedido;
     }
 
-    public void setListaPedido(Itens listaPedido) {
+    public void setListaPedido(ItensPedido listaPedido) {
         this.listaPedido = listaPedido;
     }
 
@@ -89,9 +111,18 @@ public class Pedido {
         this.cliente = cliente;
     }
 
+    public ItensPedido getItensPedido() {
+        return listaPedido;
+    }
+
+    public void setItensPedido(ItensPedido listaPedido) {
+        this.listaPedido = listaPedido;
+    }
+
+    
     @Override
     public String toString() {
-        return "Pedido{" + "idPedido=" + idPedido + ", listaPedido=" + listaPedido + ", cliente=" + cliente + '}';
+        return "Dados do pedido{" + "idPedido=" + idPedido + ", listaPedido=" + listaPedido + ", cliente=" + cliente + '}';
     }
     
     
