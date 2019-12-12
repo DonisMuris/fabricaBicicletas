@@ -21,7 +21,7 @@ public class Pedido {
     public Cliente gerarNovoCliente(){
         System.out.println("");
         System.out.println("### Cadastrar um novo cliente ###");
-        Scanner.teclado = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);
         Cliente novoCliente = new Cliente();
         
         System.out.println("Nome do Cliente:");
