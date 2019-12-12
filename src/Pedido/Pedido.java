@@ -113,7 +113,7 @@ public class Pedido {
 
     @Override
     public String toString() {
-        return "\n** ID do pedido:" + this.idPedido + "\n** Itens do pedido: " + this.itensPedido + "\n** Para o cliente " + this.cliente + "\n";
+        return "\n** ID do pedido:" + this.idPedido + "\n** Itens do pedido: " + this.itensPedido + "\n** Feito por " + this.cliente + "\n";
     }
     
     
