@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Pedido {
     private int idPedido;
-    private ItensPedido listaPedido;
+    private ItensPedido itensPedido;
     private Cliente cliente;
     
     
@@ -81,10 +81,10 @@ public class Pedido {
         return itens;
     }
 
-    public Pedido(int idPedido, Cliente cliente, ItensPedido listaPedido) {
+    public Pedido(int idPedido, Cliente cliente, ItensPedido itensPedido) {
         this.idPedido = idPedido;
         this.cliente = cliente;
-        this.listaPedido = listaPedido;
+        this.itensPedido = itensPedido;
     }
     
     public int getIdPedido() {
@@ -96,11 +96,11 @@ public class Pedido {
     }
 
     public ItensPedido getListaPedido() {
-        return listaPedido;
+        return itensPedido;
     }
 
     public void setListaPedido(ItensPedido listaPedido) {
-        this.listaPedido = listaPedido;
+        this.itensPedido = listaPedido;
     }
 
     public Cliente getCliente() {
@@ -112,17 +112,17 @@ public class Pedido {
     }
 
     public ItensPedido getItensPedido() {
-        return listaPedido;
+        return itensPedido;
     }
 
     public void setItensPedido(ItensPedido listaPedido) {
-        this.listaPedido = listaPedido;
+        this.itensPedido = listaPedido;
     }
 
     
     @Override
     public String toString() {
-        return "Dados do pedido{" + "idPedido=" + idPedido + ", listaPedido=" + listaPedido + ", cliente=" + cliente + '}';
+        return "Dados do pedido{" + "idPedido=" + idPedido + ", listaPedido=" + itensPedido + ", cliente=" + cliente + '}';
     }
     
     
