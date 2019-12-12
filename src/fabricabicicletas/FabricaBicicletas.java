@@ -43,7 +43,7 @@ public class FabricaBicicletas {
                     pedido.toString();
                     
                     System.out.println("## PEDIDO REGISTRADO COM SUCESSO ##");
-                    
+                    System.out.println("\n");
                     break;
                 case 0:
                     condicao = false;

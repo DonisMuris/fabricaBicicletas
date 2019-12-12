@@ -40,7 +40,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return this.nome + ", de CPF " + this.CPF + ". Endereco de entrega:" + this.endereco + "\n";
+        return this.nome + ", de CPF " + this.CPF + ". Endereco de entrega: " + this.endereco + "\n";
     }
      
 }
