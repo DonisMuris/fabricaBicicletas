@@ -36,16 +36,14 @@ public class FabricaBicicletas {
             switch (comando){
                 case 1:
                     
-                    System.out.println(" ABRINDO PEDIDO\n ");
+                    System.out.println("## ABRINDO PEDIDO ##");
                     pedido.gerarNovoPedido();
                     
                     // Print dos dados armazenados
-                    
                     pedido.toString();
-                    System.out.println("");  
+                    //System.out.println("");  
                     pedido.getCliente().toString();
                     
-                    System.out.println(" ");
                     System.out.println("## PEDIDO REGISTRADO COM SUCESSO ##");
                     
                     break;

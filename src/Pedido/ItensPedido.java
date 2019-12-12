@@ -40,7 +40,7 @@ public class ItensPedido {
 
     @Override
     public String toString() {
-        return "No pedido consta as bicicletas do modelo:" + this.modeloBicicleta + ". De cor: " + this.corBicicleta + ". Sendo para entrega a quantidade de:" + this.qntBicicleta + '.';
+        return this.qntBicicleta + " bicicleta(s) do modelo " + this.modeloBicicleta + " de cor " + this.corBicicleta ;
     }
 
   

@@ -95,12 +95,12 @@ public class Pedido {
         this.idPedido = idPedido;
     }
 
-    public ItensPedido getListaPedido() {
+    public ItensPedido getItensPedido() {
         return itensPedido;
     }
 
-    public void setListaPedido(ItensPedido listaPedido) {
-        this.itensPedido = listaPedido;
+    public void setItensPedido(ItensPedido itensPedido) {
+        this.itensPedido = itensPedido;
     }
 
     public Cliente getCliente() {
@@ -111,18 +111,9 @@ public class Pedido {
         this.cliente = cliente;
     }
 
-    public ItensPedido getItensPedido() {
-        return itensPedido;
-    }
-
-    public void setItensPedido(ItensPedido listaPedido) {
-        this.itensPedido = listaPedido;
-    }
-
-    
     @Override
     public String toString() {
-        return "Dados do pedido{" + "idPedido=" + idPedido + ", listaPedido=" + itensPedido + ", cliente=" + cliente + '}';
+        return "\n**ID do pedido:" + this.idPedido + "\n**itens do pedido:" + this.itensPedido + "\n** para o cliente " + this.cliente + "\n";
     }
     
     

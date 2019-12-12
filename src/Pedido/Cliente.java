@@ -26,7 +26,7 @@ public class Cliente {
         return CPF;
     }
 
-    public void setCPF(String cpf) {
+    public void setCPF(String CPF) {
         this.CPF = CPF;
     }
 
@@ -40,8 +40,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" + "nome:" + nome + "; CPF:" + CPF + "; endereco:" + endereco + '}';
+        return this.nome + ", de CPF " + this.CPF + " \nendereco de entrega:" + this.endereco + "\n";
     }
-    
-    
+     
 }
