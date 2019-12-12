@@ -46,15 +46,15 @@ public class Pedido {
         Scanner teclado = new Scanner(System.in);
         ItensPedido novosItens = new ItensPedido();
         
-        System.out.println("Digite o modelo das bicicletas que voce deseja que sejam produzidas !");
+        System.out.println("Digite o modelo de bicicleta desejado pelo cliente !");
         String entradaDado1 = teclado.nextLine();
         novosItens.setModeloBicicleta(entradaDado1);
         
-        System.out.println("Digite a cor de todas as bicicleta que voce deseja que sejam produzidas !");
+        System.out.println("Digite a cor desejada para esse modelo de bicicleta !");
         String entradaDado2 = teclado.nextLine();
         novosItens.setCorBicicleta(entradaDado2);
         
-        System.out.println("Digite quantas bicicletas que vc quer que sejam produzidas !");
+        System.out.println("Digite quantas bicicletas desse modelo serão produzidas !");
         int entradaDado3 = teclado.nextInt();
         novosItens.setQntBicicleta(entradaDado3);
         
