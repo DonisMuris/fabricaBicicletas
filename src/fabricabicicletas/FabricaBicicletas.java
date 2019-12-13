@@ -7,6 +7,7 @@ package fabricabicicletas;
 import Pedido.Cliente;
 import Pedido.ItensPedido;
 import Pedido.Pedido;
+import Vendas.Venda;
 import java.util.Scanner;
 
 /**
@@ -25,9 +26,10 @@ public class FabricaBicicletas {
         Cliente cliente = new Cliente();
         ItensPedido itens = new ItensPedido();
         Pedido pedido = new Pedido(0,cliente,itens);
+        Venda venda = new Venda();
         boolean condicao = true;
         
-        while (condicao == true){
+        while (condicao){
             int comando = 1;
             System.out.println(" Digite 1 para efetuar um pedido e 0 para sair do sistema:");
             Scanner teclado = new Scanner(System.in);
@@ -35,13 +37,11 @@ public class FabricaBicicletas {
             
             switch (comando){
                 case 1:
-                    
-                    System.out.println("## ABRINDO PEDIDO ##");
-                    pedido.gerarNovoPedido();
+
+                    venda.fazerVenda(pedido);
                     
                     // Print dos dados armazenados
                     pedido.toString();
-                    
                     System.out.println("## PEDIDO REGISTRADO COM SUCESSO ##");
                     System.out.println("\n");
                     break;
